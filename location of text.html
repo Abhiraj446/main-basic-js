@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello</h1>
+    <h1 id="wo"></h1>
+    <button id="mybtn" onclick="show()">Click</button>
+
+
+
+    <script>
+
+        let btn=document.getElementById("mybtn")
+        btn.style.backgroundColor="Navy"
+        btn.style.color="white"
+        btn.style.padding="10px 30px"
+        btn.style.fontSize="20px"
+        btn.innerHTML="Click me"
+        btn.style.cursor="pointer"
+
+        
+        // function show(){
+        //     let wor=document.getElementById("wo")
+        //     wor.innerHTML="world"
+        // }
+
+        //upper is basic and can give output only once so we use to locate function multiple times without using html append(lower) prepend(upper)
+
+
+        function show(){
+            let h1=document.createElement("h1");
+            h1.innerHTML="world"
+            // document.body.prepend(h1)
+            document.body.append(h1)
+
+            let txt=document.createTextNode("world")
+            document.body.appendChild(txt)
+        }
+
+        // btn.onclick=show
+
+
+
+        // let btn=document.getElementById("mybtn")
+        // btn.addEventListener('click',function(){
+        // let arr=[5,4,8,3,2]
+        // let newArr=[]
+        // arr.forEach(function (y){
+        //         newArr.push(y*y)
+        // // console.log(newArr)
+        // })
+        // console.log(newArr)
+        // })
+
+    </script>
+
+</body>
+</html>

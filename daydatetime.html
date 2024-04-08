@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello Age</h1>
+
+    <script>
+        let a=new Date();
+        console.log(a)
+
+        let b=a.getMonth()
+        console.log(b)
+
+        let c=a.getDate()
+        console.log(c)
+
+        let d=a.getDay()
+        console.log(d)
+
+        console.log(a.getFullYear())
+
+        console.log(a.getHours())
+
+        console.log(a.getTimezoneOffset())
+
+        console.log(a.getUTCDate())
+
+        console.log(a.getUTCDay())
+
+        let weekday=["Saturday","Sunday","Monday","Tuesday","Thursday","Friday"]
+
+        let e=new Date();
+        let f=weekday[e.getDay()]
+        console.log(f)
+    </script>
+
+</body>
+</html>

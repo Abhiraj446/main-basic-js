@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+
+    <script>
+
+        // let a=document.body.children
+        // let arr=Array.from(a)
+        // console.log(arr)
+
+        // for(i=0;i<arr.length;i++){
+        //     console.log(arr[i])
+        // }
+
+
+        //method of find
+        // let arr=[2,5,8,9,7]
+        // const abc=(value,index)=>{
+        //     if(value==8){
+        //         console.log("number is exist")
+        //     }
+        // }
+        // arr.find(abc)
+
+        //or we can do direct also 
+
+        //this method used in companies
+        // let ar=[8,9,5,3,7]
+        // ar.find((value,index)=>{
+        //     if(value>3){
+        //         console.log(value)
+        //     }
+        // })  //it takes all values greater than 3
+
+        //or one more method is
+
+        // let arrr=[8,9,5,3,7]
+        // let result=arrr.find((value,index)=>{
+        //     if(value>3){
+        //         return value
+        //     }
+        // }) 
+        // console.log(result)  //it takes only one value greater than 3
+
+        // let b=[12,45,23,65,47]
+        // let c=b.find((x)=>{
+        //     return x>12
+        // })
+        // console.log(c)
+
+
+        //method of filter 
+        //it takes all values greater than no. we choose
+
+        // let arrr=[8,9,5,3,7]
+        // let result=arrr.filter((value,index)=>{
+        //     if(value>3){
+        //         return value
+        //     }
+        // }) 
+        // console.log(result) 
+
+
+        let a=[5,6,7,12,54]
+        let b=a.filter((y)=>{
+            return y>5
+        })
+        console.log(b)
+
+        
+        //If we want to check in true or false we use some method
+
+        // let arrr=[8,9,5,3,7y]
+        // let result=arrr.some((value,index)=>{
+        //     if(value>3){
+        //         return value
+        //     }
+        // }) 
+        // console.log(result)
+        
+        // let c=[5,4,3]
+        // let d=c.some((y)=>{
+        //     return y<2
+        // })
+        // console.log(d)
+
+
+
+        //every method
+        // let arrr=[8,9,5,3,7]
+        // let result=arrr.every((value,index)=>{
+            
+        //         return value>3
+            
+        // }) 
+        // console.log(result) //it take all values acc to condition
+
+        // let a=[5,8,6,7]
+        // let b=a.every((x)=>{
+        //     return x>5;
+        // })
+        // console.log(b)
+
+        // const news = arrr.forEach((value,index)=> {   
+            // console.log(value+10)    //it gives value without array
+            // return value+10
+            // console.log(value+10)
+        // });   //it can change all elements at a time
+        // console.log(news)    //it gives undefines when we call value through return
+
+        //Map method same as for each one difference is there
+
+        // let ar=[5,6,7,9,1]
+        // let result1=ar.map((val,ind)=>{     //it gives value in form of array
+            //  return val+20
+        // })
+        // console.log(result1)    //it gives new value when we call value through return
+
+
+        // let person=[
+        //     {fname:"abhi" , lname:"raj"}
+        // ]
+        // let newss=person.map((item)=>{
+        //     return [item.fname,item.lname].join("")
+        // })
+        // console.log(newss)
+
+
+        
+
+    </script>
+
+</body>
+</html>

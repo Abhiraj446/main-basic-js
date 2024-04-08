@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .classtitle{
+        background-color: blue;
+        color:wheat;
+        font-weight: bold;
+        font-size: 40px;
+        padding: 20px;
+        margin: auto;
+        border-radius:20px;
+        width:90%;
+        margin-top: 10px;
+    }
+    button{
+        margin-top: 20px;
+        background-color: wheat;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    
+    <h1 id="heading">Hello</h1>
+    <!-- <h2 id="title">Javascript</h2> -->
+    <button id="btn">click</button>
+
+    <script>
+        let heading=document.getElementById("title")
+        let title= document.getElementById("title")
+        
+        let btn = document.getElementById("btn")
+
+        addEventListener("contextmenu",(e)=>{
+            e.preventDefault();
+        })
+
+        btn.addEventListener("mouseover",()=>{
+            btn.style.transform="scale(1.1)"
+        })
+        btn.addEventListener("mouseout",show)
+        function show(){
+            btn.style.transform=""
+        }
+        btn.addEventListener("click",()=>{
+            let para=document.createElement("h2")
+            para.innerText="Javascript is awesome!"
+
+            para.classList.add("classtitle")
+            document.body.append(para)
+
+            btn.removeEventListener("mouseout",show)
+        })
+    </script>
+</body>
+</html>

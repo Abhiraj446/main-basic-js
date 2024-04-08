@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="demo">hello</h1>
+
+    <h1 class="demo1">wo</h1>
+    <h1 class="demo1">wor</h1>
+    <h1 class="demo1">worl</h1>
+    <h1 class="demo1">world</h1>
+
+    <span>I am abhi</span>
+    <input type="text" name="gmail" id="">
+
+    <script>
+        // console.log(demo)
+
+        let demo=document.getElementById("demo")
+        console.log(demo)
+
+        let demo1=document.getElementsByClassName("demo1")
+        console.log(demo1[0])
+
+        let gm=document.getElementsByName("gmail")
+        console.log(gm)
+
+        let sp=document.getElementsByTagName("span")
+        console.log(sp)
+        sp[0].innerHTML="Hello abhi"
+        sp[0].style.backgroundColor="red"
+        sp[0].style.Color="white";
+
+        //we can also change tag 
+        sp[0].innerHTML=`<h2> I love U </h2>`
+        // sp[0].style.backgroundColor="red"
+        console.log(sp[0])
+    </script>
+
+</body>
+</html>
